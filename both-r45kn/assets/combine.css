@@ -1,0 +1,9 @@
+/* ------------------------------------------------------------------
+   Combine group additions (loaded after style.css and pe.css)
+   ------------------------------------------------------------------ */
+.sidebar__foot--combo{display:flex; flex-direction:column; align-items:stretch; gap:14px}
+.sidebar__foot--combo .breath-row{display:flex; align-items:center; gap:12px}
+.hero__today{grid-column:1 / -1; display:flex; gap:14px; flex-wrap:wrap; margin-top:-8px}
+.today-chip{display:flex; align-items:center; gap:10px; background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:8px 16px 8px 10px; font-size:.92rem; font-weight:700; color:var(--ink-soft); box-shadow:var(--shadow)}
+.today-chip i{width:26px; height:26px; flex:none}
+.today-chip .n{width:22px; height:22px; border-radius:50%; background:var(--accent); color:#fff; font-size:.75rem; display:grid; place-items:center; flex:none}

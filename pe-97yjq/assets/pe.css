@@ -1,0 +1,76 @@
+/* ------------------------------------------------------------------
+   PE group additions (loaded after style.css)
+   ------------------------------------------------------------------ */
+
+/* brand mark: a small speech bubble */
+.brand-mark{width:40px; height:40px; border-radius:14px; background:var(--blue-soft); position:relative; flex:none}
+.brand-mark::before{content:''; position:absolute; left:11px; top:12px; width:18px; height:12px; border-radius:6px; background:var(--blue)}
+.brand-mark::after{content:''; position:absolute; left:14px; top:23px; width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid var(--blue)}
+
+/* extra icon */
+.icon-sms{--i:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5v-3.5H4A1.5 1.5 0 0 1 2.5 15V7A1.5 1.5 0 0 1 4 5.5z'/><path d='M7.5 9.5h9M7.5 12.5h6'/></svg>"); background-color:var(--blue)}
+
+/* hero phone with incoming message */
+.sms{width:min(100%,240px); margin:0 auto; aspect-ratio:9/14; background:#14161c; border-radius:36px; padding:10px; box-shadow:0 24px 60px rgba(40,35,30,.22), inset 0 0 0 2px #2b2b33}
+.sms__screen{height:100%; border-radius:28px; background:linear-gradient(180deg,#dbe5ee 0%, #f3ede2 100%); position:relative; overflow:hidden; padding:34px 14px 14px; text-align:center}
+.sms__time{font-size:2.6rem; font-weight:800; color:#2a2e35; line-height:1; letter-spacing:-.02em}
+.sms__time small{font-size:1rem; font-weight:700; margin-left:2px}
+.sms__date{font-size:.8rem; color:var(--ink-soft); margin-top:4px; font-weight:700; letter-spacing:.04em; text-transform:uppercase}
+.sms__bubble{position:absolute; left:12px; right:12px; top:120px; background:rgba(255,255,255,.92); border-radius:16px; padding:10px 12px; text-align:left; box-shadow:0 8px 24px rgba(0,0,0,.12); animation:smsIn 9s var(--ease) infinite}
+.sms__from{font-size:.68rem; font-weight:800; color:var(--blue); text-transform:uppercase; letter-spacing:.06em; margin-bottom:3px}
+.sms__text{font-size:.82rem; line-height:1.35; color:var(--ink)}
+@keyframes smsIn{0%{opacity:0; transform:translateY(-16px) scale(.96)}8%{opacity:1; transform:none}85%{opacity:1; transform:none}95%{opacity:0; transform:translateY(-8px)}100%{opacity:0}}
+
+/* series strip */
+.series-strip{display:flex; flex-wrap:wrap; gap:8px; margin:4px 0 22px}
+.series-strip__chip{font-size:.85rem; font-weight:700; color:var(--ink-soft); background:var(--surface); border:1px solid var(--line); border-radius:999px; padding:5px 12px}
+
+/* video cards */
+.vcard{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); box-shadow:var(--shadow); margin:22px 0; overflow:hidden; transition:border-color .3s, box-shadow .3s}
+.vcard.is-watched{border-color:#bcd3c8; box-shadow:0 10px 30px rgba(95,143,124,.14)}
+.vcard__head{display:flex; align-items:center; gap:14px; padding:18px 22px 14px}
+.vcard__num{font-size:.78rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--blue); background:var(--blue-soft); padding:4px 10px; border-radius:999px; flex:none}
+.vcard__title{margin:0; font-size:1.15rem; flex:1; min-width:0}
+.vcard__dur{font-size:.85rem; font-weight:700; color:var(--muted); flex:none; font-variant-numeric:tabular-nums}
+.vcard .video__frame{border-radius:0; box-shadow:none}
+.vcard__foot{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:14px 22px 18px}
+.vcard__desc{margin:0; color:var(--ink-soft); font-size:.97rem}
+.watched{display:inline-flex; align-items:center; gap:10px; cursor:pointer; user-select:none; flex:none; padding:8px 14px 8px 10px; border-radius:999px; border:1px solid var(--line); background:var(--surface-2); transition:background .25s, border-color .25s}
+.watched input{position:absolute; opacity:0; width:0; height:0}
+.watched__box{width:22px; height:22px; border-radius:7px; border:2px solid var(--muted); position:relative; transition:background .25s, border-color .25s; flex:none}
+.watched__box::after{content:''; position:absolute; left:6px; top:2px; width:5px; height:10px; border-right:2.5px solid #fff; border-bottom:2.5px solid #fff; transform:rotate(45deg) scale(0); transition:transform .25s var(--ease)}
+.watched__text{font-size:.9rem; font-weight:700; color:var(--ink-soft)}
+.watched:hover{border-color:var(--accent)}
+.watched input:focus-visible ~ .watched__box{outline:2px solid var(--accent); outline-offset:2px}
+.watched input:checked ~ .watched__box{background:var(--accent); border-color:var(--accent)}
+.watched input:checked ~ .watched__box::after{transform:rotate(45deg) scale(1)}
+.watched input:checked ~ .watched__text{color:var(--accent-ink)}
+.watched.is-on{background:var(--accent-soft); border-color:transparent}
+
+/* sidebar progress */
+.sidebar__foot--progress{display:block}
+.wp__label{display:flex; justify-content:space-between; font-size:.85rem; margin-bottom:8px}
+.wp__label strong{color:var(--ink)}
+.wp__track{height:8px; border-radius:4px; background:var(--line); overflow:hidden}
+.wp__fill{height:100%; width:0; border-radius:4px; background:var(--accent); transition:width .6s var(--ease)}
+.pip{display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--line); margin-right:8px; vertical-align:1px; transition:background .3s}
+.pip.is-on{background:var(--accent)}
+
+/* done card */
+.done-card{display:flex; gap:16px; align-items:center; background:var(--accent-soft); border-radius:var(--r-md); padding:18px 20px; margin:6px 0 22px; animation:rise .5s var(--ease)}
+.done-card[hidden]{display:none}
+.done-card__check{width:44px; height:44px; border-radius:50%; background:var(--accent); flex:none; position:relative}
+.done-card__check::after{content:''; position:absolute; left:15px; top:11px; width:10px; height:18px; border-right:3px solid #fff; border-bottom:3px solid #fff; transform:rotate(45deg); animation:draw .4s .15s var(--ease) both}
+.done-card__title{font-weight:800; color:var(--accent-ink); font-size:1.1rem}
+
+/* timeline: single evening dot per day */
+.day__marks--single i{width:14px; height:14px}
+
+@media (max-width:900px){
+  .sms{width:min(60%,200px)}
+  .sms__time{font-size:2.1rem}
+  .sms__bubble{top:100px}
+  .vcard__head{flex-wrap:wrap; gap:8px 12px; padding:16px 16px 12px}
+  .vcard__title{flex-basis:100%; order:3; font-size:1.05rem}
+  .vcard__foot{flex-direction:column; align-items:flex-start; padding:14px 16px 16px}
+}

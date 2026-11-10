@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breathing and Stress · Your 14-day guide</title>
+<meta name="description" content="A short guide to slow-paced breathing, four videos on stress and health, and what the next 14 days of the study involve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/pe.css">
+<link rel="stylesheet" href="assets/combine.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
+<header class="topbar">
+  <button class="topbar__menu" id="menuBtn" aria-label="Open contents" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="topbar__title">Breathing and Stress</div>
+  <div class="topbar__pill" id="topbarSection">Welcome</div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <div class="brand-orb" aria-hidden="true"><span></span></div>
+      <div>
+        <div class="brand-title">Breathing and Stress</div>
+        <div class="brand-sub">Your 14-day guide</div>
+      </div>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <a class="toc__item" href="#welcome" data-target="welcome">
+        <span class="toc__num">1</span><span class="toc__label">Welcome</span>
+      </a>
+      <a class="toc__item" href="#what-is-spb" data-target="what-is-spb">
+        <span class="toc__num">2</span><span class="toc__label">What is slow-paced breathing?</span>
+      </a>
+      <a class="toc__item" href="#the-app" data-target="the-app">
+        <span class="toc__num">3</span><span class="toc__label">The app</span>
+      </a>
+      <div class="toc__sub">
+        <a class="toc__subitem" href="#step-download" data-target="step-download">Download</a>
+        <a class="toc__subitem" href="#step-1" data-target="step-1">3.1 Open settings</a>
+        <a class="toc__subitem" href="#step-2" data-target="step-2">3.2 Set the 5-5-2 rhythm</a>
+        <a class="toc__subitem" href="#step-3" data-target="step-3">3.3 Set the timer to 10 min</a>
+        <a class="toc__subitem" href="#step-4" data-target="step-4">3.4 Explore the rest</a>
+      </div>
+      <a class="toc__item" href="#from-tomorrow" data-target="from-tomorrow">
+        <span class="toc__num">4</span><span class="toc__label">From tomorrow</span>
+      </a>
+      <div class="toc__sub">
+        <a class="toc__subitem" href="#two-things" data-target="two-things">Your two daily tasks</a>
+        <a class="toc__subitem" href="#honest" data-target="honest">A note on honesty</a>
+        <a class="toc__subitem" href="#rewards" data-target="rewards">Your rewards</a>
+        <a class="toc__subitem" href="#plan" data-target="plan">Make a small plan</a>
+      </div>
+      <a class="toc__item" href="#videos" data-target="videos">
+        <span class="toc__num">5</span><span class="toc__label">Stress and health</span>
+      </a>
+      <div class="toc__sub">
+        <a class="toc__subitem" href="#video-1" data-target="video-1"><i class="pip" data-pip="1"></i>Part 1 · What stress is</a>
+        <a class="toc__subitem" href="#video-2" data-target="video-2"><i class="pip" data-pip="2"></i>Part 2 · How stress damages the body</a>
+        <a class="toc__subitem" href="#video-3" data-target="video-3"><i class="pip" data-pip="3"></i>Part 3 · Why you can't stop worrying</a>
+        <a class="toc__subitem" href="#video-4" data-target="video-4"><i class="pip" data-pip="4"></i>Part 4 · When the stress system breaks down</a>
+      </div>
+      <a class="toc__item" href="#practice" data-target="practice">
+        <span class="toc__num">6</span><span class="toc__label">Let's practise</span>
+      </a>
+      <a class="toc__item" href="#thank-you" data-target="thank-you">
+        <span class="toc__num">7</span><span class="toc__label">Thank you</span>
+      </a>
+    </nav>
+
+    <div class="sidebar__foot sidebar__foot--combo">
+      <div class="wp">
+        <div class="wp__label"><span>Videos watched</span><strong id="wpCount">0 / 4</strong></div>
+        <div class="wp__track"><div class="wp__fill" id="wpFill"></div></div>
+      </div>
+      <div class="breath-row">
+        <div class="mini-breath" aria-hidden="true"><div class="mini-breath__circle" id="miniCircle"></div></div>
+        <div class="mini-breath__label" id="miniLabel">Breathe in</div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop" id="backdrop"></div>
+
+  <!-- ============ MAIN ============ -->
+  <main class="content">
+
+    <!-- 1. WELCOME -->
+    <section class="section hero" id="welcome" data-title="Welcome">
+      <div class="hero__text reveal">
+        <p class="eyebrow">Part 1 · Welcome</p>
+        <h1>Thank you for continuing with the study.</h1>
+        <p class="lead">Over the next 14 days you will learn and use a simple technique called <strong>slow-paced breathing</strong>. Previous research has found that it can noticeably improve day-to-day stress and mood, and that just ten minutes a day is enough.</p>
+        <p class="lead">This page walks you through everything you need, and includes four short videos about stress and health. It takes about 30 minutes, and the best way to follow it is with your phone next to you.</p>
+      </div>
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="orb-stage">
+          <div class="orb-ring orb-ring--1"></div>
+          <div class="orb-ring orb-ring--2"></div>
+          <div class="orb" id="heroOrb"></div>
+          <div class="orb-label" id="heroLabel">Breathe in</div>
+        </div>
+      </div>
+
+      <div class="hero__today reveal" aria-label="What this page covers">
+        <div class="today-chip"><span class="n">1</span>Learn slow-paced breathing</div>
+        <div class="today-chip"><span class="n">2</span>Set up the app</div>
+        <div class="today-chip"><span class="n">3</span>Watch four short videos</div>
+        <div class="today-chip"><span class="n">4</span>Try a 3-minute practice</div>
+      </div>
+
+      <div class="hero__routine reveal">
+        <h2 class="h-small">Your daily routine from tomorrow, in three steps</h2>
+        <div class="flow">
+          <div class="flow__card">
+            <div class="flow__icon icon-sun"></div>
+            <div class="flow__title">Pick a quiet moment</div>
+            <div class="flow__text">After you wake up or during your lunch break, any free daytime moment.</div>
+          </div>
+          <div class="flow__arrow"></div>
+          <div class="flow__card">
+            <div class="flow__icon icon-phone"></div>
+            <div class="flow__title">Breathe for 10 minutes</div>
+            <div class="flow__text">Open the app and follow the pacer. That is your practice for the day.</div>
+          </div>
+          <div class="flow__arrow"></div>
+          <div class="flow__card">
+            <div class="flow__icon icon-clip"></div>
+            <div class="flow__title">8 pm: a one-minute check-in</div>
+            <div class="flow__text">A text message brings you a very short questionnaire about your day.</div>
+          </div>
+        </div>
+        <p class="centered muted">And that's all there is to it.</p>
+      </div>
+    </section>
+
+    <!-- 2. WHAT IS SPB -->
+    <section class="section" id="what-is-spb" data-title="What is SPB?">
+      <div class="reveal">
+        <p class="eyebrow">Part 2 · The technique</p>
+        <h2>So, what is slow-paced breathing?</h2>
+        <p class="lead">As the name suggests, it simply means breathing <em>in</em> slowly, breathing <em>out</em> slowly, and briefly pausing in between, at a much gentler pace than we usually breathe.</p>
+      </div>
+
+      <div class="card card--wide reveal">
+        <svg class="wave" viewBox="0 0 720 220" role="img" aria-label="One slow breath: a slow rise for breathing in, a slow fall for breathing out, then a short flat hold.">
+          <defs>
+            <linearGradient id="waveFill" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="var(--accent)" stop-opacity=".22"/>
+              <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <line x1="40" y1="160" x2="680" y2="160" class="wave__base"/>
+          <path d="M60,160 C180,160 200,40 300,40 C400,40 420,160 540,160 L640,160 L640,160 L60,160 Z" fill="url(#waveFill)"/>
+          <path id="breathPath" d="M60,160 C180,160 200,40 300,40 C400,40 420,160 540,160 L640,160" class="wave__line"/>
+          <circle r="8" class="wave__dot">
+            <animateMotion dur="12s" repeatCount="indefinite" keyPoints="0;0.42;0.84;1" keyTimes="0;0.4167;0.8333;1" calcMode="linear">
+              <mpath href="#breathPath"/>
+            </animateMotion>
+          </circle>
+          <text x="180" y="200" class="wave__label">Breathe in <tspan class="wave__hint">(slow)</tspan></text>
+          <text x="420" y="200" class="wave__label">Breathe out <tspan class="wave__hint">(slow)</tspan></text>
+          <text x="590" y="200" class="wave__label">Hold</text>
+          <line x1="300" y1="30" x2="300" y2="170" class="wave__div"/>
+          <line x1="540" y1="30" x2="540" y2="170" class="wave__div"/>
+        </svg>
+      </div>
+
+      <div class="two-col reveal">
+        <div class="stat">
+          <div class="stat__label">Usual resting breathing</div>
+          <div class="stat__value">12–20</div>
+          <div class="stat__unit">breaths per minute</div>
+          <div class="dots dots--fast" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+        <div class="stat stat--accent">
+          <div class="stat__label">Slow-paced breathing</div>
+          <div class="stat__value">5–6</div>
+          <div class="stat__unit">breaths per minute</div>
+          <div class="dots dots--slow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+
+      <p class="reveal">Breathing at this slower rhythm gives your body a clear, steady signal to settle. With a little practice it becomes something you can reach for whenever you need it. The short video below explains how it works and what to expect.</p>
+
+      <div class="video reveal" data-video="section1">
+        <div class="video__frame" id="video-section1"></div>
+        <div class="video__caption">Video 1 · An introduction to slow-paced breathing</div>
+      </div>
+    </section>
+
+    <!-- 3. THE APP -->
+    <section class="section" id="the-app" data-title="The app">
+      <div class="reveal">
+        <p class="eyebrow">Part 3 · Your tool</p>
+        <h2>Meet the app: <span class="nowrap">Awesome Breathing</span></h2>
+        <p class="lead">To keep your breathing at the right pace, we'll use a small helper app called <strong>Awesome Breathing: Pacer Timer</strong>. On your phone it simply appears as <strong>“Breathing”</strong>.</p>
+      </div>
+
+      <div class="app-card reveal" id="step-download">
+        <div class="app-card__head">
+          <img src="assets/app-icon.jpg" alt="The Breathing app icon: a dark rounded square with a blue and purple ring." class="app-icon">
+          <div>
+            <div class="app-card__name">Awesome Breathing: Pacer Timer</div>
+            <ul class="ticks">
+              <li>Completely free</li>
+              <li>Does not record any of your data</li>
+              <li>Approved by the App Store and Google Play</li>
+            </ul>
+          </div>
+        </div>
+        <p>Search for the name in your app store, or scan the code for your phone:</p>
+        <div class="qr-row">
+          <div class="qr">
+            <img src="assets/qr-appstore.png" alt="QR code for the App Store listing">
+            <div class="qr__label"><span class="badge badge--apple">App Store</span> iPhone</div>
+          </div>
+          <div class="qr">
+            <img src="assets/qr-googleplay.png" alt="QR code for the Google Play listing">
+            <div class="qr__label"><span class="badge badge--play">Google Play</span> Android</div>
+          </div>
+        </div>
+        <div class="callout callout--soft">
+          <strong>Downloaded?</strong> Don't open it just yet. First, watch this short walkthrough of the settings we'll be using.
+        </div>
+      </div>
+
+      <div class="video reveal" data-video="section2">
+        <div class="video__frame" id="video-section2"></div>
+        <div class="video__caption">Video 2 · Setting up the app</div>
+      </div>
+
+      <div class="reveal">
+        <h3>Now let's set it up together, step by step</h3>
+        <p>The video moves quickly, so grab your phone, open the app and follow along below. It only takes a couple of minutes.</p>
+      </div>
+
+      <div class="step reveal" id="step-1">
+        <div class="step__text">
+          <div class="step__num">3.1</div>
+          <h4>Open the settings</h4>
+          <p>When you open the app you'll see the main screen with a large circle. In the <strong>bottom-right corner</strong> there is a small <strong>gear icon</strong>. Tap it to go to the Settings screen.</p>
+        </div>
+        <div class="step__visual">
+          <figure class="phone">
+            <img src="assets/app-main.jpg" alt="The app's main screen: a large dark circle, a 5-second countdown and a gear icon in the bottom-right corner.">
+            <span class="hotspot" style="left:86.5%; top:94.6%"></span>
+          </figure>
+        </div>
+      </div>
+
+      <div class="step step--flip reveal" id="step-2">
+        <div class="step__text">
+          <div class="step__num">3.2</div>
+          <h4>Set the breathing rhythm to 5-5-2</h4>
+          <p>In the middle of the Settings screen is the <strong>Breathing Program</strong> area. By default it is set to <strong>4-4-4-4</strong>: breathe in for 4 seconds, hold for 4, breathe out for 4, hold for 4, and repeat.</p>
+          <p>In this study we'll use <strong>5-0-5-2</strong> instead, which we call <strong>5-5-2</strong> for short. It's a gentler rhythm that suits beginners better.</p>
+
+          <div class="rhythm" aria-label="The 5-5-2 rhythm: breathe in 5 seconds, breathe out 5 seconds, hold 2 seconds.">
+            <div class="rhythm__row">
+              <div class="rhythm__seg rhythm__seg--in" style="flex:5"><span>Breathe in</span><b>5 s</b></div>
+              <div class="rhythm__seg rhythm__seg--out" style="flex:5"><span>Breathe out</span><b>5 s</b></div>
+              <div class="rhythm__seg rhythm__seg--hold" style="flex:2"><span>Hold</span><b>2 s</b></div>
+            </div>
+            <div class="rhythm__note">12 seconds per breath · 5 breaths per minute</div>
+          </div>
+
+          <ol class="mini-steps">
+            <li>Tap <strong>−</strong> / <strong>+</strong> next to each value, or tap the number itself to type it: Inhale <b>5</b>, Inhale hold <b>0</b>, Exhale <b>5</b>, Exhale hold <b>2</b>.</li>
+            <li>Tap the box to the right of <strong>Program</strong> (it says “Box Breathing”) and rename it to <b>5-5-2</b>.</li>
+          </ol>
+        </div>
+        <div class="step__visual step__visual--pair">
+          <figure class="phone phone--sm">
+            <img src="assets/app-settings.jpg" alt="Settings screen with the default Box Breathing program set to 4-4-4-4.">
+            <span class="hotspot hotspot--box" style="left:52%; top:40%; width:44%; height:36%"></span>
+            <figcaption>Before: 4-4-4-4</figcaption>
+          </figure>
+          <div class="pair-arrow" aria-hidden="true"></div>
+          <figure class="phone phone--sm">
+            <img src="assets/app-settings-552.jpg" alt="Settings screen after the change: program renamed to 5-5-2 with values 5, 0, 5 and 2.">
+            <figcaption>After: 5-5-2</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="step reveal" id="step-3">
+        <div class="step__text">
+          <div class="step__num">3.3</div>
+          <h4>Set the timer to 10 minutes</h4>
+          <p>Just below, in the <strong>Timer</strong> area, drag the <strong>Timer Duration</strong> slider from the default <strong>3 minutes</strong> up to <strong>10 minutes</strong>. This is the length of your daily practice.</p>
+          <div class="slider-demo" aria-hidden="true">
+            <div class="slider-demo__label">Timer Duration: <span id="sliderText">3 minutes</span></div>
+            <div class="slider-demo__track"><div class="slider-demo__fill" id="sliderFill"></div><div class="slider-demo__knob" id="sliderKnob"></div></div>
+          </div>
+        </div>
+        <div class="step__visual">
+          <figure class="phone">
+            <img src="assets/app-settings-10min.jpg" alt="Settings screen with Timer Duration set to 10 minutes.">
+            <span class="hotspot hotspot--box" style="left:4%; top:83%; width:92%; height:7.5%"></span>
+          </figure>
+        </div>
+      </div>
+
+      <div class="step step--flip reveal" id="step-4">
+        <div class="step__text">
+          <div class="step__num">3.4</div>
+          <h4>Explore the rest (optional)</h4>
+          <p>If you keep scrolling you'll find more options, such as the <strong>voice cues</strong>, <strong>starting and ending bells</strong>, and <strong>background audio</strong>. None of these affect the study, so set them however you like and feel free to explore.</p>
+          <div class="callout callout--soft">
+            <strong>That's the setup done.</strong> From now on, every practice is simply: open the app, press play, breathe along for 10 minutes.
+          </div>
+        </div>
+        <div class="step__visual">
+          <figure class="phone">
+            <img src="assets/app-settings-audio.jpg" alt="Further settings: display theme, audio cues, vibration, bells and background audio.">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FROM TOMORROW -->
+    <section class="section" id="from-tomorrow" data-title="From tomorrow">
+      <div class="reveal">
+        <p class="eyebrow">Part 4 · The next 14 days</p>
+        <h2>From tomorrow</h2>
+        <p class="lead">Starting tomorrow, and for the next 14 days, there are two things we'd like you to do each day.</p>
+      </div>
+
+      <div class="two-col two-col--tasks reveal" id="two-things">
+        <div class="task">
+          <div class="task__badge">1</div>
+          <div class="task__icon icon-sun"></div>
+          <h3>10 minutes of slow-paced breathing</h3>
+          <p>Choose a free moment during the day. We suggest <strong>just after waking up</strong> or <strong>after lunch</strong>, but any daytime moment that suits you is fine.</p>
+        </div>
+        <div class="task">
+          <div class="task__badge">2</div>
+          <div class="task__icon icon-moon"></div>
+          <h3>A one-minute questionnaire after 8 pm</h3>
+          <p>At 8 pm a text message with a link will arrive on your phone. It opens a very short set of questions about how your day went. We've timed it ourselves: it really does take about <strong>one minute</strong>.</p>
+        </div>
+      </div>
+
+      <div class="timeline reveal" aria-label="14-day calendar, each day with a daytime breathing practice and an 8 pm questionnaire.">
+        <div class="timeline__days" id="timelineDays"></div>
+        <div class="timeline__legend">
+          <span><i class="legend-dot legend-dot--day"></i>Daytime: 10-min breathing</span>
+          <span><i class="legend-dot legend-dot--night"></i>After 8 pm: 1-min questionnaire by text</span>
+        </div>
+      </div>
+
+      <h3 class="reveal">Two things we'd like to stress</h3>
+
+      <div class="callout callout--important reveal" id="honest">
+        <div class="callout__title">Please answer honestly</div>
+        <p>Each evening the questionnaire will ask whether you completed your ten minutes of breathing that day. <strong>Please answer truthfully.</strong> Your payment depends <em>only</em> on completing the daily questionnaires, <strong>not</strong> on whether you did the breathing practice, so an honest answer can never count against you.</p>
+        <p>We still warmly encourage you to practise every day, and you're welcome to adjust the length if you need to. A large body of research shows that slow breathing is genuinely helpful for everyday stress and anxiety.</p>
+      </div>
+
+      <div class="card reveal" id="rewards">
+        <div class="card__title">A reminder of your rewards</div>
+        <table class="rewards">
+          <thead><tr><th>Task</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Screening questionnaire</td><td>£0.50 <span class="tag">already received</span></td></tr>
+            <tr><td>Baseline questionnaire</td><td>£1.00 <span class="tag">already received</span></td></tr>
+            <tr><td>Daily questionnaires, 14 days from tomorrow</td><td>£0.50 × 14 = <strong>£7.00</strong></td></tr>
+          </tbody>
+          <tfoot><tr><td>Total</td><td><strong>£8.50</strong></td></tr></tfoot>
+        </table>
+        <p class="muted small">All rewards are calculated once the 14-day study has finished and paid together to your Prolific account.</p>
+      </div>
+
+      <div class="card card--plan reveal" id="plan">
+        <div class="card__title">Make yourself a small plan</div>
+        <p>Beyond the daily ten minutes, we encourage you to use slow breathing whenever you need it in everyday life. Deciding <em>when</em> and <em>how long</em> in advance makes that much more likely to happen, so let's fill in a tiny plan together:</p>
+
+        <div class="plan-sentence">
+          <span>If I feel</span>
+          <select id="planFeeling" aria-label="Choose a feeling">
+            <option value="" selected disabled>choose…</option>
+            <option>irritable</option>
+            <option>tense</option>
+            <option>anxious</option>
+            <option>stressed</option>
+          </select>
+          <span>today, I will try</span>
+          <select id="planDuration" aria-label="Choose a duration">
+            <option value="" selected disabled>choose…</option>
+            <option>1 minute</option>
+            <option>2 minutes</option>
+            <option>3 minutes</option>
+          </select>
+          <span>of 5-5-2 slow-paced breathing to help me settle.</span>
+        </div>
+
+        <div class="plan-result" id="planResult" hidden>
+          <div class="plan-result__check" aria-hidden="true"></div>
+          <div>
+            <div class="plan-result__title">Your plan</div>
+            <div class="plan-result__text" id="planText"></div>
+            <div class="muted small">Nothing is sent anywhere. This is just for you, so you might like to screenshot it or jot it down.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. STRESS AND HEALTH VIDEOS -->
+    <section class="section" id="videos" data-title="Stress and health">
+      <div class="reveal">
+        <p class="eyebrow">Part 5 · Stress and health</p>
+        <h2>Four short videos on stress and health</h2>
+        <p class="lead">Before we practise, we'd like to invite you to watch a short four-part series, <strong>The Silent Threat</strong>, made by our lab. Together the videos take <strong>about 15 minutes</strong> and explain how stress affects a person's health.</p>
+        <div class="series-strip" aria-hidden="true">
+          <span class="series-strip__chip">4 videos</span>
+          <span class="series-strip__chip">3–4 minutes each</span>
+          <span class="series-strip__chip">Tick each one as you go</span>
+        </div>
+      </div>
+
+      <article class="vcard reveal" id="video-1" data-title="Part 1">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 1</span>
+          <h3 class="vcard__title">What Stress Is?</h3>
+          <span class="vcard__dur">3:48</span>
+        </header>
+        <div class="video__frame" data-video-id="XYuStlZjOng"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">What stress actually is, and why our bodies respond the way they do.</p>
+          <label class="watched"><input type="checkbox" data-watch="1"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+
+      <article class="vcard reveal" id="video-2" data-title="Part 2">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 2</span>
+          <h3 class="vcard__title">How Stress Damages Your Body?</h3>
+          <span class="vcard__dur">3:38</span>
+        </header>
+        <div class="video__frame" data-video-id="aR_-JceH1Ps"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">What happens inside the body when stress sticks around for too long.</p>
+          <label class="watched"><input type="checkbox" data-watch="2"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+
+      <article class="vcard reveal" id="video-3" data-title="Part 3">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 3</span>
+          <h3 class="vcard__title">Why You Can't Stop Worrying?</h3>
+          <span class="vcard__dur">3:06</span>
+        </header>
+        <div class="video__frame" data-video-id="O-Wy_7t5NKw"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">Why the mind keeps returning to worries, and how that keeps stress going.</p>
+          <label class="watched"><input type="checkbox" data-watch="3"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+
+      <article class="vcard reveal" id="video-4" data-title="Part 4">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 4</span>
+          <h3 class="vcard__title">When the Stress System Breaks Down: Stress, Trauma and Suicide Risk</h3>
+          <span class="vcard__dur">4:06</span>
+        </header>
+        <div class="video__frame" data-video-id="3xGcuVhjCD8"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">What can happen when the stress system is pushed beyond its limits.</p>
+          <label class="watched"><input type="checkbox" data-watch="4"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+
+      <div class="done-card" id="doneCard" hidden>
+        <div class="done-card__check" aria-hidden="true"></div>
+        <div>
+          <div class="done-card__title">All four videos watched</div>
+          <div class="muted small">Lovely. Now let's finish with a short practice.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PRACTICE -->
+    <section class="section" id="practice" data-title="Let's practise">
+      <div class="reveal">
+        <p class="eyebrow">Part 6 · First try</p>
+        <h2>Let's practise together</h2>
+        <p class="lead">Thank you for your patience. To finish, let's try a <strong>3-minute</strong> slow-paced breathing session right now. Pick whichever option you prefer:</p>
+      </div>
+
+      <div class="two-col reveal">
+        <div class="option">
+          <div class="option__num">Option 1</div>
+          <div class="option__icon icon-phone"></div>
+          <h3>On your phone</h3>
+          <p>Open the app, press <strong>play</strong>, and follow the circle. For this first go, you can leave the timer at 3 minutes or just stop whenever you like.</p>
+        </div>
+        <div class="option">
+          <div class="option__num">Option 2</div>
+          <div class="option__icon icon-play"></div>
+          <h3>Follow the video</h3>
+          <p>Press play on the video below and breathe along. Sit comfortably, relax your shoulders, and let the pacer guide you.</p>
+        </div>
+      </div>
+
+      <div class="video reveal" data-video="section3">
+        <div class="video__frame" id="video-section3"></div>
+        <div class="video__caption">Video 3 · A guided 3-minute practice</div>
+      </div>
+
+      <div class="tips reveal">
+        <div class="tip"><b>Breathe gently.</b> Slow doesn't mean deep. Keep it light and comfortable.</div>
+        <div class="tip"><b>Nose in, mouth or nose out.</b> Whatever feels natural.</div>
+        <div class="tip"><b>Mind wandering?</b> Completely normal. Just come back to the circle.</div>
+      </div>
+    </section>
+
+    <!-- 7. THANK YOU -->
+    <section class="section section--last" id="thank-you" data-title="Thank you">
+      <div class="reveal">
+        <p class="eyebrow">Part 7 · You're all set</p>
+        <h2>Thank you for your time today</h2>
+        <p class="lead">We're really glad you'll be joining us for the next 14 days.</p>
+      </div>
+      <div class="next reveal">
+        <div class="next__item">
+          <div class="next__icon icon-sun"></div>
+          <div><b>Tomorrow</b> your 14 days begin. Find a quiet moment in the day, open the app and breathe for 10 minutes.</div>
+        </div>
+        <div class="next__item">
+          <div class="next__icon icon-sms"></div>
+          <div><b>Tomorrow at 8 pm</b> your first diary questionnaire will arrive on your phone by text message, and the same short message will follow every evening. Just tap the link and answer; it takes about a minute.</div>
+        </div>
+        <div class="next__item">
+          <div class="next__icon icon-mail"></div>
+          <div><b>Questions?</b> You can reach the research team at <a href="mailto:stress.health.2024@gmail.com">stress.health.2024@gmail.com</a>.</div>
+        </div>
+      </div>
+      <div class="finale reveal">
+        <div class="orb-stage orb-stage--sm" aria-hidden="true">
+          <div class="orb" id="finaleOrb"></div>
+        </div>
+        <p class="finale__text">Have a lovely day, and we'll see you tomorrow evening.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Understanding Stress · Your 14-day guide</title>
+<meta name="description" content="What the next 14 days of the study involve, and four short videos on how stress affects health.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/pe.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
+<header class="topbar">
+  <button class="topbar__menu" id="menuBtn" aria-label="Open contents" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="topbar__title">Understanding Stress</div>
+  <div class="topbar__pill" id="topbarSection">Welcome</div>
+</header>
+
+<div class="layout">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__brand">
+      <div class="brand-mark" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">Understanding Stress</div>
+        <div class="brand-sub">Your 14-day guide</div>
+      </div>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <a class="toc__item" href="#welcome" data-target="welcome">
+        <span class="toc__num">1</span><span class="toc__label">Welcome</span>
+      </a>
+      <div class="toc__sub">
+        <a class="toc__subitem" href="#daily-task" data-target="daily-task">Your one daily task</a>
+        <a class="toc__subitem" href="#rewards" data-target="rewards">Your rewards</a>
+      </div>
+      <a class="toc__item" href="#videos" data-target="videos">
+        <span class="toc__num">2</span><span class="toc__label">Four short videos</span>
+      </a>
+      <div class="toc__sub">
+        <a class="toc__subitem" href="#video-1" data-target="video-1"><i class="pip" data-pip="1"></i>Part 1 · What stress is</a>
+        <a class="toc__subitem" href="#video-2" data-target="video-2"><i class="pip" data-pip="2"></i>Part 2 · How stress damages the body</a>
+        <a class="toc__subitem" href="#video-3" data-target="video-3"><i class="pip" data-pip="3"></i>Part 3 · Why you can't stop worrying</a>
+        <a class="toc__subitem" href="#video-4" data-target="video-4"><i class="pip" data-pip="4"></i>Part 4 · When the stress system breaks down</a>
+      </div>
+      <a class="toc__item" href="#thank-you" data-target="thank-you">
+        <span class="toc__num">3</span><span class="toc__label">Thank you</span>
+      </a>
+    </nav>
+
+    <div class="sidebar__foot sidebar__foot--progress">
+      <div class="wp">
+        <div class="wp__label"><span>Videos watched</span><strong id="wpCount">0 / 4</strong></div>
+        <div class="wp__track"><div class="wp__fill" id="wpFill"></div></div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop" id="backdrop"></div>
+
+  <!-- ============ MAIN ============ -->
+  <main class="content">
+
+    <!-- 1. WELCOME -->
+    <section class="section hero" id="welcome" data-title="Welcome">
+      <div class="hero__text reveal">
+        <p class="eyebrow">Part 1 · Welcome</p>
+        <h1>Thank you for continuing with the study.</h1>
+        <p class="lead">Over the next 14 days we'd like to follow how your days go. What we ask of you is <strong>very simple</strong>, and this page explains it in a few minutes. At the end, there are four short videos about stress and health to watch today.</p>
+      </div>
+
+      <div class="hero__visual reveal" aria-hidden="true">
+        <div class="sms">
+          <div class="sms__screen">
+            <div class="sms__time">8:00 <small>pm</small></div>
+            <div class="sms__date">Daily check-in</div>
+            <div class="sms__bubble">
+              <div class="sms__from">Text message · now</div>
+              <div class="sms__text">Hi! How was your day today? Tap the link to answer. It takes about a minute.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__routine reveal" id="daily-task">
+        <h2 class="h-small">Your one daily task</h2>
+        <div class="flow">
+          <div class="flow__card">
+            <div class="flow__icon icon-sms"></div>
+            <div class="flow__title">8 pm: a text arrives</div>
+            <div class="flow__text">Every evening at 8 pm we'll send a short text message to your phone.</div>
+          </div>
+          <div class="flow__arrow"></div>
+          <div class="flow__card">
+            <div class="flow__icon icon-phone"></div>
+            <div class="flow__title">Tap the link</div>
+            <div class="flow__text">It opens a very short questionnaire about how your day went.</div>
+          </div>
+          <div class="flow__arrow"></div>
+          <div class="flow__card">
+            <div class="flow__icon icon-clip"></div>
+            <div class="flow__title">One minute, done</div>
+            <div class="flow__text">How you felt, your mood, and whether anything stressful happened.</div>
+          </div>
+        </div>
+        <p class="centered muted">We've timed it ourselves: it really does take about a minute.</p>
+      </div>
+
+      <div class="timeline reveal" aria-label="14-day calendar, each evening with an 8 pm questionnaire.">
+        <div class="timeline__days" id="timelineDays"></div>
+        <div class="timeline__legend">
+          <span><i class="legend-dot legend-dot--night"></i>Every evening at 8 pm: one-minute questionnaire by text</span>
+        </div>
+      </div>
+
+      <div class="card reveal" id="rewards">
+        <div class="card__title">A reminder of your rewards</div>
+        <table class="rewards">
+          <thead><tr><th>Task</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Screening questionnaire</td><td>£0.50 <span class="tag">already received</span></td></tr>
+            <tr><td>Baseline questionnaire</td><td>£1.00 <span class="tag">already received</span></td></tr>
+            <tr><td>Daily questionnaires, 14 days from tomorrow</td><td>£0.50 × 14 = <strong>£7.00</strong></td></tr>
+          </tbody>
+          <tfoot><tr><td>Total</td><td><strong>£8.50</strong></td></tr></tfoot>
+        </table>
+        <p class="muted small">All rewards are calculated once the 14-day study has finished and paid together to your Prolific account.</p>
+      </div>
+    </section>
+
+    <!-- 2. VIDEOS -->
+    <section class="section" id="videos" data-title="Four short videos">
+      <div class="reveal">
+        <p class="eyebrow">Part 2 · Today's last task</p>
+        <h2>Four short videos on stress and health</h2>
+        <p class="lead">One last thing for today. We'd like to invite you to watch a short four-part series, <strong>The Silent Threat</strong>, made by our lab. Together the videos take <strong>about 15 minutes</strong> and explain how stress affects a person's health.</p>
+        <div class="series-strip" aria-hidden="true">
+          <span class="series-strip__chip">4 videos</span>
+          <span class="series-strip__chip">3–4 minutes each</span>
+          <span class="series-strip__chip">Tick each one as you go</span>
+        </div>
+      </div>
+
+      <article class="vcard reveal" id="video-1" data-title="Part 1">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 1</span>
+          <h3 class="vcard__title">What Stress Is?</h3>
+          <span class="vcard__dur">3:48</span>
+        </header>
+        <div class="video__frame" data-video-id="XYuStlZjOng"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">What stress actually is, and why our bodies respond the way they do.</p>
+          <label class="watched"><input type="checkbox" data-watch="1"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+
+      <article class="vcard reveal" id="video-2" data-title="Part 2">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 2</span>
+          <h3 class="vcard__title">How Stress Damages Your Body?</h3>
+          <span class="vcard__dur">3:38</span>
+        </header>
+        <div class="video__frame" data-video-id="aR_-JceH1Ps"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">What happens inside the body when stress sticks around for too long.</p>
+          <label class="watched"><input type="checkbox" data-watch="2"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+
+      <article class="vcard reveal" id="video-3" data-title="Part 3">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 3</span>
+          <h3 class="vcard__title">Why You Can't Stop Worrying?</h3>
+          <span class="vcard__dur">3:06</span>
+        </header>
+        <div class="video__frame" data-video-id="O-Wy_7t5NKw"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">Why the mind keeps returning to worries, and how that keeps stress going.</p>
+          <label class="watched"><input type="checkbox" data-watch="3"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+
+      <article class="vcard reveal" id="video-4" data-title="Part 4">
+        <header class="vcard__head">
+          <span class="vcard__num">Part 4</span>
+          <h3 class="vcard__title">When the Stress System Breaks Down: Stress, Trauma and Suicide Risk</h3>
+          <span class="vcard__dur">4:06</span>
+        </header>
+        <div class="video__frame" data-video-id="3xGcuVhjCD8"></div>
+        <div class="vcard__foot">
+          <p class="vcard__desc">What can happen when the stress system is pushed beyond its limits.</p>
+          <label class="watched"><input type="checkbox" data-watch="4"><span class="watched__box"></span><span class="watched__text">Mark as watched</span></label>
+        </div>
+      </article>
+    </section>
+
+    <!-- 3. THANK YOU -->
+    <section class="section section--last" id="thank-you" data-title="Thank you">
+      <div class="reveal">
+        <p class="eyebrow">Part 3 · You're all set</p>
+        <h2>Thank you for your time today</h2>
+        <p class="lead">We're really glad you'll be joining us for the next 14 days of daily check-ins.</p>
+      </div>
+
+      <div class="done-card" id="doneCard" hidden>
+        <div class="done-card__check" aria-hidden="true"></div>
+        <div>
+          <div class="done-card__title">All four videos watched</div>
+          <div class="muted small">Lovely. That's everything for today.</div>
+        </div>
+      </div>
+
+      <div class="next reveal">
+        <div class="next__item">
+          <div class="next__icon icon-sms"></div>
+          <div><b>Tomorrow at 8 pm</b> your first diary questionnaire will arrive on your phone by text message. Just tap the link and answer; it takes about a minute.</div>
+        </div>
+        <div class="next__item">
+          <div class="next__icon icon-moon"></div>
+          <div><b>Every evening after that</b>, for 14 days, the same short message will arrive at 8 pm.</div>
+        </div>
+        <div class="next__item">
+          <div class="next__icon icon-mail"></div>
+          <div><b>Questions?</b> You can reach the research team at <a href="mailto:stress.health.2024@gmail.com">stress.health.2024@gmail.com</a>.</div>
+        </div>
+      </div>
+
+      <div class="finale reveal">
+        <p class="finale__text">Have a lovely day, and we'll see you tomorrow evening.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
